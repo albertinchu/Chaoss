@@ -6,7 +6,7 @@ using Smod2.EventSystem.Events;
 using Smod2.API;
 namespace Chaoss
 {
-    partial class Event : IEventHandlerTeamRespawn, IEventHandlerSetRole
+    partial class Event : IEventHandlerTeamRespawn, IEventHandlerSetRole, IEventHandlerWaitingForPlayers
     {
         private Chaoss plugin;
         private bool contadorcaos = false;
@@ -39,7 +39,13 @@ namespace Chaoss
             {
              PluginManager.Manager.Server.Map.AnnounceCustomMessage("attention all facility personnel, Unauthorized personnel has been detected on the surface");
             }
-         
+
+
+        }
+
+        public void OnWaitingForPlayers(WaitingForPlayersEvent ev)
+        {
+            plugin.RefreshConfig();
         }
     }
 }
