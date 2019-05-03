@@ -18,7 +18,7 @@ namespace Chaoss
 
         public void OnSetRole(PlayerSetRoleEvent ev)
         {
-            if(PluginManager.Manager.Server.Round.Duration < 20)
+            if(PluginManager.Manager.Server.Round.Duration < 5)
             {
                 foreach (Player player in PluginManager.Manager.Server.GetPlayers())
                 {
