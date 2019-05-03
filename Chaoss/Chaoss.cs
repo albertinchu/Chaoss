@@ -30,7 +30,7 @@ namespace Chaoss
         {
            
             
-            this.AddEventHandlers(new Event(this));
+            this.AddEventHandlers(new Event(this),Smod2.Events.Priority.Lowest);
 
         }
         public void RefreshConfig()
