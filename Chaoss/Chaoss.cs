@@ -1,6 +1,6 @@
 ﻿using Smod2;
 using Smod2.Attributes;
-using scp4aiur;
+
 namespace Chaoss
 {
     [PluginDetails(
@@ -29,7 +29,7 @@ namespace Chaoss
         public override void Register()
         {
            
-            Timing.Init(this);
+            
             this.AddEventHandlers(new Event(this));
 
         }

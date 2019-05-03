@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
+﻿
 using Smod2;
 using Smod2.EventHandlers;
 using Smod2.Events;
-using scp4aiur;
 using Smod2.EventSystem.Events;
 using Smod2.API;
 namespace Chaoss
