@@ -35,7 +35,7 @@ namespace Chaoss
 
         public void OnTeamRespawn(TeamRespawnEvent ev)
         {
-            if((PluginManager.Manager.Server.Round.Duration > 60 )&&(ev.SpawnChaos))
+            if((PluginManager.Manager.Server.Round.Duration > 5 )&&(ev.SpawnChaos))
             {
              PluginManager.Manager.Server.Map.AnnounceCustomMessage("attention all facility personnel, Unauthorized personnel has been detected on the surface");
             }
